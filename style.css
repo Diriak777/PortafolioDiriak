@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #00ffcc;
+}
+
+header p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+.socials {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.socials a {
+  margin: 0 15px;
+  color: #00ffcc;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #888;
+  padding: 0 1rem;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .socials {
+    font-size: 1.5rem;
+  }
+
+  .socials a {
+    margin: 0 10px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+.projects {
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #00ffcc;
+}
+
+.project {
+  background-color: #1a1a1a;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.1);
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project h3 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+}
+
+.project p {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.project a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Efectos suaves al pasar el cursor o tocar en móviles */
+header h1,
+.project,
+.project a,
+.socials a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de escala en el título */
+header h1:hover {
+  transform: scale(1.03);
+}
+
+/* Efecto de escala en los íconos sociales (ya tenías uno, pero ahora se ve más fluido) */
+.socials a:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+/* Efecto de escala en los proyectos */
+.project:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+}
+
+/* Efecto en enlaces dentro del proyecto */
+.project a:hover {
+  transform: scale(1.05);
+}
+
+.project-preview {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-preview:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
